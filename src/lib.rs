@@ -6,4 +6,4 @@ peg::parser!{
     pub rule list() -> Vec<u32>
       = "[" l:(number() ** ",") "]" { l }
   }
-}
+}   
